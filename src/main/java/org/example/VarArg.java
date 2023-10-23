@@ -8,4 +8,13 @@ public class VarArg {
         }
     }
 
+    public static void averageNumbers(int... numbers){
+        double sum = 0;
+        for (int num : numbers){
+            sum = sum + num;
+        }
+        double average = sum/ numbers.length;
+        System.out.println(average);
+    }
+
 }
