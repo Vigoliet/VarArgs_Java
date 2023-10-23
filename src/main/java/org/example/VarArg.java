@@ -17,4 +17,11 @@ public class VarArg {
         System.out.println(average);
     }
 
+    public static void repeatString( String text ,int... number){
+        for (int num : number) {
+            for (int i = 0; i < num; i++) {
+                System.out.println(text);
+            }
+        }
+    }
 }
